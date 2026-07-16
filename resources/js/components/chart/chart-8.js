@@ -1,4 +1,6 @@
 
+import { brandColor } from '../../utils/theme.js';
+
 export function initChartEight() {
     const chartEightEl = document.querySelector('#chartEight');
     if (chartEightEl) {
@@ -18,7 +20,7 @@ export function initChartEight() {
                 position: "top",
                 horizontalAlign: "left",
             },
-            colors: ["#465FFF", "#9CB9FF"],
+            colors: [brandColor('500'), brandColor('300')],
             chart: {
                 fontFamily: "Outfit, sans-serif",
                 height: 310,

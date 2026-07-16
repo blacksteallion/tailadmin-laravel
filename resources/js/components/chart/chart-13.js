@@ -1,4 +1,6 @@
 
+import { brandColor } from '../../utils/theme.js';
+
 export function initChartThirteen() {
     const chartThirteenEl = document.querySelector("#chartThirteen");
     if (chartThirteenEl) {
@@ -247,7 +249,7 @@ export function initChartThirteen() {
                 position: "top",
                 horizontalAlign: "left",
             },
-            colors: ["#465FFF"],
+            colors: [brandColor('500')],
             chart: {
                 fontFamily: "Outfit, sans-serif",
                 height: 335,

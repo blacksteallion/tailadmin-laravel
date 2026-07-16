@@ -2,6 +2,8 @@ import jsVectorMap from 'jsvectormap';
 import 'jsvectormap/dist/maps/world';
 import 'jsvectormap/dist/jsvectormap.min.css';
 
+import { brandColor, cssVar } from '../utils/theme.js';
+
 export const initMap = () => {
     const mapSelectorOne = document.querySelectorAll('#mapOne');
 
@@ -13,11 +15,11 @@ export const initMap = () => {
             regionStyle: {
                 initial: {
                     fontFamily: "Outfit",
-                    fill: "#D9D9D9",
+                    fill: cssVar('--color-gray-300') || '#D9D9D9',
                 },
                 hover: {
                     fillOpacity: 1,
-                    fill: "#465fff",
+                    fill: brandColor('500'),
                 },
             },
             markers: [
@@ -38,12 +40,12 @@ export const initMap = () => {
             markerStyle: {
                 initial: {
                     strokeWidth: 1,
-                    fill: "#465fff",
+                    fill: brandColor('500'),
                     fillOpacity: 1,
                     r: 4,
                 },
                 hover: {
-                    fill: "#465fff",
+                    fill: brandColor('500'),
                     fillOpacity: 1,
                 },
                 selected: {},

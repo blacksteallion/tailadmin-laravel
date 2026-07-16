@@ -1,5 +1,7 @@
 
 
+import { brandColor } from '../../utils/theme.js';
+
 export function initChartSix() {
     const chartSixEl = document.querySelector('#chartSix');
     if (chartSixEl) {
@@ -22,7 +24,7 @@ export function initChartSix() {
                     data: [21, 7, 25, 13, 22, 8, 18, 20],
                 },
             ],
-            colors: ["#2a31d8", "#465fff", "#7592ff", "#c2d6ff"],
+            colors: [brandColor('700'), brandColor('500'), brandColor('400'), brandColor('200')],
             chart: {
                 fontFamily: "Outfit, sans-serif",
                 type: "bar",

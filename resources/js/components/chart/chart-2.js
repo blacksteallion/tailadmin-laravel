@@ -1,11 +1,13 @@
 
+import { brandColor, cssVar } from '../../utils/theme.js';
+
 export const initChartTwo = () => {
     const chartElement = document.querySelector('#chartTwo');
 
     if (chartElement) {
         const chartTwoOptions = {
             series: [75.55],
-            colors: ["#465FFF"],
+            colors: [brandColor('500')],
             chart: {
                 fontFamily: "Outfit, sans-serif",
                 type: "radialBar",
@@ -22,7 +24,7 @@ export const initChartTwo = () => {
                         size: "80%",
                     },
                     track: {
-                        background: "#E4E7EC",
+                        background: cssVar('--color-gray-200') || '#E4E7EC',
                         strokeWidth: "100%",
                         margin: 5, // margin is in pixels
                     },
@@ -34,7 +36,7 @@ export const initChartTwo = () => {
                             fontSize: "36px",
                             fontWeight: "600",
                             offsetY: 60,
-                            color: "#1D2939",
+                            color: cssVar('--color-gray-800') || '#1D2939',
                             formatter: function (val) {
                                 return val + "%";
                             },
@@ -44,7 +46,7 @@ export const initChartTwo = () => {
             },
             fill: {
                 type: "solid",
-                colors: ["#465FFF"],
+colors: [brandColor('500')],
             },
             stroke: {
                 lineCap: "round",
