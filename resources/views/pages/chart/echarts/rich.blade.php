@@ -2,7 +2,7 @@
 
 @section('content')
     <x-common.page-breadcrumb pageTitle="Rich Text Charts - ECharts" />
-    <div class="space-y-6" id="echarts-rich-page">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="echarts-rich-page">
         <x-common.component-card title="Pie Special Label">
             <div class="custom-scrollbar max-w-full overflow-x-auto">
                 <div id="chart-pie-rich-text" style="height: 400px; min-width: 600px;"></div>

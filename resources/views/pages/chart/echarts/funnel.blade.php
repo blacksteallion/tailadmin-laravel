@@ -2,7 +2,7 @@
 
 @section('content')
     <x-common.page-breadcrumb pageTitle="Funnel Charts - ECharts" />
-    <div class="space-y-6" id="echarts-funnel-page">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="echarts-funnel-page">
         <x-common.component-card title="Funnel Chart">
             <div class="custom-scrollbar max-w-full overflow-x-auto">
                 <div id="chart-funnel" style="height: 500px; min-width: 600px;"></div>

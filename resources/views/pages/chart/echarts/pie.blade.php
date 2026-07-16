@@ -2,7 +2,7 @@
 
 @section('content')
     <x-common.page-breadcrumb pageTitle="Pie Charts" />
-    <div class="space-y-6" id="echarts-pie-page">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="echarts-pie-page">
         <x-common.component-card title="Referer of a Website">
             <div class="custom-scrollbar max-w-full overflow-x-auto">
                 <div id="chart-pie-simple" style="height: 400px; min-width: 600px;"></div>

@@ -2,7 +2,7 @@
 
 @section('content')
     <x-common.page-breadcrumb pageTitle="Treemap Charts - ECharts" />
-    <div class="space-y-6" id="echarts-treemap-page">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="echarts-treemap-page">
         <x-common.component-card title="Transition between Treemap and Sunburst">
             <div class="custom-scrollbar max-w-full overflow-x-auto">
                 <div id="chart-treemap-sunburst-transition" style="height: 500px; min-width: 600px;"></div>

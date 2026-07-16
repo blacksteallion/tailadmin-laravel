@@ -2,7 +2,7 @@
 
 @section('content')
     <x-common.page-breadcrumb pageTitle="Dataset Charts - ECharts" />
-    <div class="space-y-6" id="echarts-dataset-page">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="echarts-dataset-page">
         <x-common.component-card title="Sort Data in Bar Chart">
             <div class="custom-scrollbar max-w-full overflow-x-auto">
                 <div id="chart-data-transform-sort-bar" style="height: 400px; min-width: 600px;"></div>

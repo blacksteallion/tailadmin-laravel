@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ThemePaletteController;
 
 // dashboard pages
 Route::get('/', function () {
@@ -93,6 +94,17 @@ Route::get('/echarts/bar3d', function () {
     return view('pages.chart.echarts.bar3d', ['title' => '3D Bar Charts - ECharts GL']);
 })->name('echarts-bar3d');
 
+
+// theme palette management
+Route::prefix('admin')->name('theme-palettes.')->controller(ThemePaletteController::class)->group(function () {
+    Route::get('/theme-palettes', 'index')->name('index');
+    Route::get('/theme-palettes/create', 'create')->name('create');
+    Route::post('/theme-palettes', 'store')->name('store');
+    Route::get('/theme-palettes/{themePalette}/edit', 'edit')->name('edit');
+    Route::put('/theme-palettes/{themePalette}', 'update')->name('update');
+    Route::delete('/theme-palettes/{themePalette}', 'destroy')->name('destroy');
+    Route::patch('/theme-palettes/{themePalette}/activate', 'activate')->name('activate');
+});
 
 // authentication pages
 Route::get('/signin', function () {

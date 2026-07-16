@@ -2,7 +2,7 @@
 
 @section('content')
     <x-common.page-breadcrumb pageTitle="3D Bar Charts - ECharts GL" />
-    <div class="space-y-6" id="echarts-bar3d-page">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="echarts-bar3d-page">
         <x-common.component-card title="3D Bar Dataset">
             <div class="custom-scrollbar max-w-full overflow-x-auto">
                 <div id="chart-bar3d-dataset" style="height: 500px; min-width: 600px;"></div>

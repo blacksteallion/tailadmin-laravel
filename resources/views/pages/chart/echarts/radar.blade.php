@@ -2,7 +2,7 @@
 
 @section('content')
     <x-common.page-breadcrumb pageTitle="Radar Charts" />
-    <div class="space-y-6" id="echarts-radar-page">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="echarts-radar-page">
         <x-common.component-card title="Basic Radar Chart">
             <div class="custom-scrollbar max-w-full overflow-x-auto">
                 <div id="chart-radar" style="height: 400px; min-width: 600px;"></div>

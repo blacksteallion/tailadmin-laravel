@@ -2,7 +2,7 @@
 
 @section('content')
     <x-common.page-breadcrumb pageTitle="Tree Charts - ECharts" />
-    <div class="space-y-6" id="echarts-tree-page">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="echarts-tree-page">
         <x-common.component-card title="From Left to Right Tree">
             <div class="custom-scrollbar max-w-full overflow-x-auto">
                 <div id="chart-tree-basic" style="height: 500px; min-width: 600px;"></div>

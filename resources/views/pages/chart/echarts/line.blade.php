@@ -2,7 +2,7 @@
 
 @section('content')
     <x-common.page-breadcrumb pageTitle="Line Charts" />
-    <div class="space-y-6" id="echarts-line-page">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="echarts-line-page">
         <x-common.component-card title="Basic Line Chart">
         <div class="custom-scrollbar max-w-full overflow-x-auto">
             <div id="chart-line-simple" style="height: 400px; min-width: 600px;"></div>
