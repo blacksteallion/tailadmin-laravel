@@ -53,4 +53,39 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.querySelector('[data-type]')) {
         import('./components/wysiwyg').then(module => module.initWysiwyg());
     }
+
+    // ECharts category pages
+    if (document.querySelector('#echarts-line-page')) {
+        import('./components/echarts/line').then(m => m.initLineCharts());
+    }
+    if (document.querySelector('#echarts-bar-page')) {
+        import('./components/echarts/bar').then(m => m.initBarCharts());
+    }
+    if (document.querySelector('#echarts-pie-page')) {
+        import('./components/echarts/pie').then(m => m.initPieCharts());
+    }
+    if (document.querySelector('#echarts-candlestick-page')) {
+        import('./components/echarts/candlestick').then(m => m.initCandlestickCharts());
+    }
+    if (document.querySelector('#echarts-radar-page')) {
+        import('./components/echarts/radar').then(m => m.initRadarCharts());
+    }
+    if (document.querySelector('#echarts-tree-page')) {
+        import('./components/echarts/tree').then(m => m.initTreeCharts());
+    }
+    if (document.querySelector('#echarts-treemap-page')) {
+        import('./components/echarts/treemap').then(m => m.initTreemapCharts());
+    }
+    if (document.querySelector('#echarts-funnel-page')) {
+        import('./components/echarts/funnel').then(m => m.initFunnelCharts());
+    }
+    if (document.querySelector('#echarts-dataset-page')) {
+        import('./components/echarts/dataset').then(m => m.initDatasetCharts());
+    }
+    if (document.querySelector('#echarts-rich-page')) {
+        import('./components/echarts/rich').then(m => m.initRichCharts());
+    }
+    if (document.querySelector('#echarts-bar3d-page')) {
+        import('./components/echarts/bar3d').then(m => m.initBar3dCharts());
+    }
 });

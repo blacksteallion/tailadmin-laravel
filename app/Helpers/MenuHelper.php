@@ -57,7 +57,24 @@ class MenuHelper
                 'name' => 'Charts',
                 'subItems' => [
                     ['name' => 'Line Chart', 'path' => '/line-chart', 'pro' => false],
-                    ['name' => 'Bar Chart', 'path' => '/bar-chart', 'pro' => false]
+                    ['name' => 'Bar Chart', 'path' => '/bar-chart', 'pro' => false],
+                ],
+            ],
+            [
+                'icon' => 'charts',
+                'name' => 'Apache ECharts',
+                'subItems' => [
+                    ['name' => 'Line', 'path' => '/echarts/line'],
+                    ['name' => 'Bar', 'path' => '/echarts/bar'],
+                    ['name' => 'Pie', 'path' => '/echarts/pie'],
+                    ['name' => 'Candlestick', 'path' => '/echarts/candlestick'],
+                    ['name' => 'Radar', 'path' => '/echarts/radar'],
+                    ['name' => 'Tree', 'path' => '/echarts/tree'],
+                    ['name' => 'Treemap', 'path' => '/echarts/treemap'],
+                    ['name' => 'Funnel', 'path' => '/echarts/funnel'],
+                    ['name' => 'Dataset', 'path' => '/echarts/dataset'],
+                    ['name' => 'Rich', 'path' => '/echarts/rich'],
+                    ['name' => '3D Bar', 'path' => '/echarts/bar3d'],
                 ],
             ],
             [

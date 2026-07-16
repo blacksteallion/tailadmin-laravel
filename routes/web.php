@@ -48,6 +48,51 @@ Route::get('/bar-chart', function () {
     return view('pages.chart.bar-chart', ['title' => 'Bar Chart']);
 })->name('bar-chart');
 
+// ECharts category pages
+Route::get('/echarts/line', function () {
+    return view('pages.chart.echarts.line', ['title' => 'Line Charts - ECharts']);
+})->name('echarts-line');
+
+Route::get('/echarts/bar', function () {
+    return view('pages.chart.echarts.bar', ['title' => 'Bar Charts - ECharts']);
+})->name('echarts-bar');
+
+Route::get('/echarts/pie', function () {
+    return view('pages.chart.echarts.pie', ['title' => 'Pie Charts - ECharts']);
+})->name('echarts-pie');
+
+Route::get('/echarts/candlestick', function () {
+    return view('pages.chart.echarts.candlestick', ['title' => 'Candlestick Charts - ECharts']);
+})->name('echarts-candlestick');
+
+Route::get('/echarts/radar', function () {
+    return view('pages.chart.echarts.radar', ['title' => 'Radar Charts - ECharts']);
+})->name('echarts-radar');
+
+Route::get('/echarts/tree', function () {
+    return view('pages.chart.echarts.tree', ['title' => 'Tree Charts - ECharts']);
+})->name('echarts-tree');
+
+Route::get('/echarts/treemap', function () {
+    return view('pages.chart.echarts.treemap', ['title' => 'Treemap Charts - ECharts']);
+})->name('echarts-treemap');
+
+Route::get('/echarts/funnel', function () {
+    return view('pages.chart.echarts.funnel', ['title' => 'Funnel Charts - ECharts']);
+})->name('echarts-funnel');
+
+Route::get('/echarts/dataset', function () {
+    return view('pages.chart.echarts.dataset', ['title' => 'Dataset Charts - ECharts']);
+})->name('echarts-dataset');
+
+Route::get('/echarts/rich', function () {
+    return view('pages.chart.echarts.rich', ['title' => 'Rich Text Charts - ECharts']);
+})->name('echarts-rich');
+
+Route::get('/echarts/bar3d', function () {
+    return view('pages.chart.echarts.bar3d', ['title' => '3D Bar Charts - ECharts GL']);
+})->name('echarts-bar3d');
+
 
 // authentication pages
 Route::get('/signin', function () {
