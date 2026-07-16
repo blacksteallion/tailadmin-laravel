@@ -111,12 +111,7 @@ class ThemePaletteSeeder extends Seeder
                     '900' => '#0b4a6f',
                     '950' => '#062c41',
                 ],
-                'theme-pink' => [
-                    '500' => '#ee46bc',
-                ],
-                'theme-purple' => [
-                    '500' => '#7a5af8',
-                ],
+
             ],
         ]);
     }

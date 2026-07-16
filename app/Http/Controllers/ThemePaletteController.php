@@ -136,8 +136,7 @@ class ThemePaletteController extends Controller
                 '500' => '#0ba5ec', '600' => '#0086c9', '700' => '#026aa2',
                 '800' => '#065986', '900' => '#0b4a6f', '950' => '#062c41',
             ],
-            'theme-pink' => ['500' => '#ee46bc'],
-            'theme-purple' => ['500' => '#7a5af8'],
+
         ];
     }
 }
